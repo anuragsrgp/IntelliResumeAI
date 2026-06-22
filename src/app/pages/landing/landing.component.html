@@ -1,0 +1,145 @@
+<div class="hero">
+
+  <div class="grid"></div>
+
+  <div class="orb"></div>
+
+  <div class="glow glow1"></div>
+  <div class="glow glow2"></div>
+
+  <nav class="navbar">
+
+    <div class="logo">
+      IntelliResume AI
+    </div>
+
+    <div class="nav-links">
+
+      <button routerLink="/login">
+        Login
+      </button>
+
+      <button
+        class="register-btn"
+        routerLink="/register">
+
+        Get Started
+
+      </button>
+
+    </div>
+
+  </nav>
+
+  <div class="hero-content">
+
+    <div class="left">
+
+      <div class="badge">
+
+        🚀 AI Powered Resume Intelligence
+
+      </div>
+
+      <h1>
+
+        Transform Your Resume
+        Into A Job Winning Profile
+
+      </h1>
+
+      <p>
+
+        Get ATS Score, Missing Skills,
+        Resume Improvements,
+        AI Suggestions and
+        Interview Questions.
+
+      </p>
+
+      <div class="hero-buttons">
+
+        <button
+          class="primary-btn"
+          routerLink="/register">
+
+          Start Free
+
+        </button>
+
+    
+
+<button
+  class="secondary-btn"
+  (click)="showDemo = true">
+
+  Live Demo
+
+</button>
+
+<div
+  class="demo-modal"
+  *ngIf="showDemo">
+
+  <div class="demo-content">
+
+    <span
+      class="close-btn"
+      (click)="showDemo = false">
+
+      ✕
+
+    </span>
+
+    <video
+      controls
+      autoplay
+      muted
+      loop
+      playsinline
+      width="100%">
+
+      <source
+        src="assets/download.mp4"
+        type="video/mp4">
+
+      Your browser does not support video.
+
+    </video>
+
+  </div>
+
+</div>
+
+
+      </div>
+
+    </div>
+
+    <div class="right">
+
+      <div class="ats-card">
+
+        <div class="ring">
+
+          <div class="ring-center">
+
+            96%
+
+          </div>
+
+        </div>
+
+        <h3>ATS Score</h3>
+
+        <span>
+          Resume Ready
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="upload-page">
+
+  <div class="upload-card">
+
+    <h1>
+      Upload Resume
+    </h1>
+
+    <input
+      type="file"
+      accept=".pdf"
+      (change)="onFileSelected($event)">
+
+    <button
+      (click)="uploadResume()">
+
+      Upload & Analyze
+
+    </button>
+
+  </div>
+
+</div>

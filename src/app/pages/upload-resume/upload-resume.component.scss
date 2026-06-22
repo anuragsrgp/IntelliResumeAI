@@ -1,0 +1,90 @@
+.upload-page{
+
+  min-height:100vh;
+
+  background:#020617;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  padding:30px;
+}
+
+.upload-card{
+
+  width:700px;
+
+  background:
+  rgba(255,255,255,.08);
+
+  backdrop-filter:
+  blur(20px);
+
+  border:
+  1px solid rgba(255,255,255,.12);
+
+  border-radius:30px;
+
+  padding:40px;
+
+  text-align:center;
+
+  color:white;
+}
+
+.drop-zone{
+
+  margin-top:30px;
+
+  border:
+  2px dashed #38bdf8;
+
+  border-radius:20px;
+
+  padding:60px;
+
+  cursor:pointer;
+}
+
+.upload-icon{
+
+  font-size:60px;
+}
+
+input{
+
+  margin-top:20px;
+
+  color:white;
+}
+
+.file-info{
+
+  margin-top:20px;
+
+  color:#38bdf8;
+
+  font-weight:600;
+}
+
+.analyze-btn{
+
+  margin-top:30px;
+
+  padding:15px 40px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:
+  linear-gradient(
+  135deg,
+  #2563eb,
+  #06b6d4);
+
+  color:white;
+}

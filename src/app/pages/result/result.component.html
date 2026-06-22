@@ -1,0 +1,221 @@
+<div class="result-container">
+
+  <div class="top-section">
+
+    <div class="ats-card">
+
+      <div class="score-circle">
+
+        <h1>
+          {{result.atsScore}}%
+        </h1>
+
+      </div>
+
+      <h2>
+        ATS Score
+      </h2>
+
+    </div>
+
+    <div class="summary-card">
+
+      <h2>
+        {{result.profile}}
+      </h2>
+
+      <h4>
+        {{result.experienceLevel}}
+      </h4>
+
+      <p>
+        {{result.profileSummary}}
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+
+      <h3>
+        Skills Found
+        ({{result.skills?.length}})
+      </h3>
+
+      <div class="tags">
+
+        <span
+          *ngFor="let item of result.skills">
+
+          {{item}}
+
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Missing Skills
+        ({{result.missingSkills?.length}})
+      </h3>
+
+      <div class="tags red">
+
+        <span
+          *ngFor="let item of result.missingSkills">
+
+          {{item}}
+
+        </span>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Strengths
+      </h3>
+
+      <ul>
+
+        <li
+          *ngFor="let item of result.strengths">
+
+          {{item}}
+
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="card">
+
+      <h3>
+        Weaknesses
+      </h3>
+
+      <ul>
+
+        <li
+          *ngFor="let item of result.weaknesses">
+
+          {{item}}
+
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="card full">
+
+      <h3>
+        AI Suggestions
+      </h3>
+
+      <ul>
+
+        <li
+          *ngFor="let item of result.suggestions">
+
+          {{item}}
+
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="card full">
+
+      <h3>
+        Learning Roadmap
+      </h3>
+
+      <ul>
+
+        <li
+          *ngFor="let item of result.learningRoadmap">
+
+          {{item}}
+
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div class="card full">
+
+      <h3>
+
+        Interview Questions
+        ({{result.interviewQuestions?.length}})
+
+      </h3>
+
+      <div class="questions-grid">
+
+        <details
+          *ngFor="let q of result.interviewQuestions; let i=index">
+
+          <summary>
+
+            Q{{i+1}}
+            -
+            {{q.question}}
+
+          </summary>
+
+          <div class="question-body">
+
+            <p>
+
+              <strong>
+                Difficulty:
+              </strong>
+
+              {{q.difficulty}}
+
+            </p>
+
+            <p>
+
+              <strong>
+                Answer:
+              </strong>
+
+              {{q.answer}}
+
+            </p>
+
+            <p>
+
+              <strong>
+                Example:
+              </strong>
+
+              {{q.example}}
+
+            </p>
+
+          </div>
+
+        </details>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

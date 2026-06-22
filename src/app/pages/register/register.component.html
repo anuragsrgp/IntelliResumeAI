@@ -1,0 +1,53 @@
+<div class="auth-page">
+
+  <div class="bg-grid"></div>
+
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+
+  <div class="login-card">
+
+    <div class="logo">
+
+      IntelliResume AI
+
+    </div>
+
+    <h1>
+
+      Create Account
+
+    </h1>
+
+    <p>
+
+      Start Your AI Resume Journey
+
+    </p>
+
+    <input
+      type="text"
+      placeholder="Full Name"
+      [(ngModel)]="name">
+
+    <input
+      type="email"
+      placeholder="Email"
+      [(ngModel)]="email">
+
+    <input
+      type="password"
+      placeholder="Password"
+      [(ngModel)]="password">
+
+    <button
+      class="login-btn"
+      (click)="register()">
+
+      Register
+
+    </button>
+
+  </div>
+
+</div>
