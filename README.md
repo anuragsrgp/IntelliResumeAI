@@ -1,27 +1,53 @@
 # IntelliResumeAI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+AI Powered Resume Analyzer built using Angular, ASP.NET Core, SQL Server and Groq AI.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* User Registration & Login using JWT Authentication
+* Resume Upload
+* ATS Score Analysis
+* Skills Extraction
+* Missing Skills Detection
+* AI Suggestions
+* Learning Roadmap Generation
+* Interview Question Generation
+* Responsive User Interface
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Frontend
 
-## Build
+* Angular
+* TypeScript
+* SCSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Backend
 
-## Running unit tests
+* ASP.NET Core Web API
+* Entity Framework Core
+* SQL Server
+* JWT Authentication
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### AI Integration
 
-## Running end-to-end tests
+* Groq API
+* Llama Model
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Project Workflow
 
-## Further help
+1. User Register/Login
+2. Upload Resume
+3. Resume Text Extraction
+4. AI Analysis using Groq
+5. ATS Score Generation
+6. Skills & Missing Skills Detection
+7. Learning Roadmap Creation
+8. Interview Questions Generation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Author
+
+Anurag Kumar Srivastava
+
+GitHub:
+https://github.com/anuragsrgp/IntelliResumeAI
